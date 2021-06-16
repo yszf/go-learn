@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "D:\\Projects\\go\\go-learn\\day06/test_func9.go"
+            "program": "D:\\Projects\\go\\go-learn\\day06/test_channel9.go"
         }
 
     ]
