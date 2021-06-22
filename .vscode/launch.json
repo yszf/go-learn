@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "D:\\Projects\\go\\go-learn\\day09/test_pc.go"
+            "program": "D:\\Projects\\go\\go-learn\\day10/test_exception.go"
         }
 
     ]
