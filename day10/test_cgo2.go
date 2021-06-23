@@ -4,5 +4,5 @@ package main
 import "C"
 
 func main() {
-	C.puts(C.CString("Hello, World\n"))
+	C.puts(C.CString("Hello, World"))
 }

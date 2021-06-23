@@ -5,8 +5,8 @@ void SayHello(const char* s) {
     printf("%s\n", s);
 } 
 
-int main() {
-    SayHello("hello world!");
+// int main() {
+//     SayHello("hello world!");
 
-    return 0;
-}
+//     return 0;
+// }
