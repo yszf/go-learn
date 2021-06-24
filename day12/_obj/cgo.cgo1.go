@@ -11,4 +11,6 @@ func add(a, b  /*line :7:15*/_Ctype_int /*line :7:20*/)  /*line :7:22*/_Ctype_in
 	return a + b
 }
 
-func main() {}
+func main() {
+
+}

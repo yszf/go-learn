@@ -18,7 +18,7 @@ extern char* _cgo_topofstack(void);
 
 #define _cgo_msan_write(addr, sz)
 
-extern void _cgoexp_95ee69644bb3_add(void *);
+extern void _cgoexp_e93fccc2f088_add(void *);
 
 CGO_NO_SANITIZE_THREAD
 int add(int a, int b)
@@ -34,7 +34,7 @@ int add(int a, int b)
 	_cgo_a.p0 = a;
 	_cgo_a.p1 = b;
 	_cgo_tsan_release();
-	crosscall2(_cgoexp_95ee69644bb3_add, &_cgo_a, 12, _cgo_ctxt);
+	crosscall2(_cgoexp_e93fccc2f088_add, &_cgo_a, 12, _cgo_ctxt);
 	_cgo_tsan_acquire();
 	_cgo_release_context(_cgo_ctxt);
 	return _cgo_a.r0;

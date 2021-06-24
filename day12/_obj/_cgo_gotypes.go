@@ -29,9 +29,9 @@ func _cgoCheckPointer(interface{}, interface{})
 func _cgoCheckResult(interface{})
 
 //go:cgo_export_dynamic add
-//go:linkname _cgoexp_95ee69644bb3_add _cgoexp_95ee69644bb3_add
-//go:cgo_export_static _cgoexp_95ee69644bb3_add
-func _cgoexp_95ee69644bb3_add(a *struct {
+//go:linkname _cgoexp_e93fccc2f088_add _cgoexp_e93fccc2f088_add
+//go:cgo_export_static _cgoexp_e93fccc2f088_add
+func _cgoexp_e93fccc2f088_add(a *struct {
 		p0 _Ctype_int
 		p1 _Ctype_int
 		r0 _Ctype_int
