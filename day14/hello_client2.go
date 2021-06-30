@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
+	"go-learn/day14/rpc_pkg"
 	"log"
-
-	"./rpc_pkg"
 )
 
 func main() {

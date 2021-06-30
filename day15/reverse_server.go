@@ -6,15 +6,15 @@ import (
 	"time"
 )
 
-type HelloService struct{}
+type HelloService2 struct{}
 
-func (p *HelloService) Hello(request string, reply *string) error {
+func (p *HelloService2) Hello(request string, reply *string) error {
 	*reply = "hello:" + request
 	return nil
 }
 
 func main() {
-	rpc.Register(new(HelloService))
+	rpc.Register(new(HelloService2))
 
 	for {
 		conn, _ := net.Dial("tcp", "localhost:1234")

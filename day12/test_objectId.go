@@ -14,9 +14,8 @@ static void printString(const char* s) {
 import "C"
 
 import (
+	"go-learn/day12/object"
 	"unsafe"
-
-	"./object"
 )
 
 //export NewGoString

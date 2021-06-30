@@ -1,9 +1,8 @@
 package main
 
 import (
+	"go-learn/day13/person"
 	"unsafe"
-
-	"./person"
 )
 
 //#include "./person/person_capi.h"

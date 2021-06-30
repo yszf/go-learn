@@ -5,9 +5,8 @@ import "C"
 
 import (
 	"fmt"
+	"go-learn/day12/qsort"
 	"unsafe"
-
-	qsort "./qsort"
 )
 
 //export go_qsort_compare

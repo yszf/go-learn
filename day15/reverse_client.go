@@ -7,9 +7,14 @@ import (
 	"net/rpc"
 )
 
-func doClientWork(clientChan <-chan *rpc.Client) {
+func doClientWork2(clientChan <-chan *rpc.Client) {
 	client := <-clientChan
-	defer client.Close()
+	defer func(client *rpc.Client) {
+		err := client.Close()
+		if err != nil {
+			log.Fatal(err)
+		}
+	}(client)
 
 	var reply string
 	err := client.Call("HelloService.Hello", "hello", &reply)
@@ -20,7 +25,7 @@ func doClientWork(clientChan <-chan *rpc.Client) {
 	fmt.Println(reply)
 }
 
-func doClientWork2(clientChan <-chan *rpc.Client) {
+func doClientWork3(clientChan <-chan *rpc.Client) {
 	client := <-clientChan
 	helloCall := client.Go("HelloService.Hello", "hello", new(string), nil)
 
@@ -55,5 +60,5 @@ func main() {
 		}
 	}()
 
-	doClientWork2(clientChan)
+	doClientWork3(clientChan)
 }

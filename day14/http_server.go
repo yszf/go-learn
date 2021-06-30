@@ -7,15 +7,15 @@ import (
 	"net/rpc/jsonrpc"
 )
 
-type HelloService struct{}
+type HelloService5 struct{}
 
-func (p *HelloService) Hello(request string, reply *string) error {
+func (p *HelloService5) Hello(request string, reply *string) error {
 	*reply = "hello:" + request
 	return nil
 }
 
 func main() {
-	rpc.RegisterName("HelloService", new(HelloService))
+	rpc.RegisterName("HelloService", new(HelloService5))
 
 	http.HandleFunc("/jsonrpc", func(w http.ResponseWriter, r *http.Request) {
 		var conn io.ReadWriteCloser = struct {

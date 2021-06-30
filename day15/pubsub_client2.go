@@ -3,10 +3,10 @@ package main
 import (
 	"context"
 	"fmt"
+	"go-learn/day15/mypubsub"
 	"io"
 	"log"
 
-	mypubsub "./mypubsub"
 	"google.golang.org/grpc"
 )
 

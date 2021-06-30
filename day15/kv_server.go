@@ -1,15 +1,17 @@
 package main
 
 import (
+	"go-learn/day15/kv"
 	"log"
 	"net"
 	"net/rpc"
-
-	"./kv"
 )
 
 func main() {
-	rpc.RegisterName("KVStoreService", kv.NewKVStoreService())
+	err := rpc.RegisterName("KVStoreService", kv.NewKVStoreService())
+	if err != nil {
+		return
+	}
 
 	listener, err := net.Listen("tcp", ":1234")
 	if err != nil {

@@ -5,7 +5,7 @@ import "C"
 import (
 	"fmt"
 
-	_ "./number"
+	_ "go-learn/day13/number"
 )
 
 func main() {

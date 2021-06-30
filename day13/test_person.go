@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "./person"
+	_ "go-learn/day13/person"
 )
 
 func main() {

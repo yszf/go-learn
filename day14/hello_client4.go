@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
+	"go-learn/day14/hello"
 	"log"
-
-	"./hello"
 )
 
 func main() {

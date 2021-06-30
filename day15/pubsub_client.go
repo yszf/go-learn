@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
+	"go-learn/day15/mypubsub"
 	"log"
 
-	mypubsub "./mypubsub"
 	"google.golang.org/grpc"
 )
 

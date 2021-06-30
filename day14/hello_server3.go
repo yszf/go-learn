@@ -7,15 +7,15 @@ import (
 	"net/rpc/jsonrpc"
 )
 
-type HelloService struct{}
+type HelloService3 struct{}
 
-func (p *HelloService) Hello(request string, reply *string) error {
+func (p *HelloService3) Hello(request string, reply *string) error {
 	*reply = "hello:" + request
 	return nil
 }
 
 func main() {
-	rpc.RegisterName("HelloService", new(HelloService))
+	rpc.RegisterName("HelloService", new(HelloService3))
 
 	listener, err := net.Listen("tcp", ":1234")
 	if err != nil {

@@ -6,9 +6,8 @@ import (
 	"log"
 	"net"
 
+	"go-learn/day15/hello"
 	"google.golang.org/grpc"
-
-	hello "./hello"
 )
 
 type HelloServiceImpl struct {

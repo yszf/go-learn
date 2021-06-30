@@ -1,6 +1,6 @@
 package main
 
-// void SayHello(char* s);
+// void SayHello2(char* s);
 import "C"
 
 import (
@@ -8,10 +8,10 @@ import (
 )
 
 //export SayHello
-func SayHello(s *C.char) {
+func SayHello2(s *C.char) {
 	fmt.Print(C.GoString(s))
 }
 
 func main() {
-	C.SayHello(C.CString("Hello, World\n"))
+	C.SayHello2(C.CString("Hello, World\n"))
 }

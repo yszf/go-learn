@@ -1,13 +1,12 @@
 package main
 
 import (
+	"go-learn/day14/plugin"
 	"io/ioutil"
 	"os"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/generator"
-
-	"./plugin"
 )
 
 func main() {

@@ -6,7 +6,6 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/pubsub"
-	// "github.com/moby/moby/pkg/pubsub"
 )
 
 type PubsubService struct {

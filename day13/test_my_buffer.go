@@ -1,9 +1,8 @@
 package main
 
 import (
+	"go-learn/day13/my_buffer"
 	"unsafe"
-
-	"./my_buffer"
 )
 
 //#include <stdio.h>

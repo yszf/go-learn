@@ -3,13 +3,12 @@ package main
 import (
 	"context"
 	"fmt"
+	"go-learn/day15/hello"
 	"io"
 	"log"
 	"time"
 
 	"google.golang.org/grpc"
-
-	hello "./hello"
 )
 
 func main() {

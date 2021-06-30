@@ -1,22 +1,21 @@
 package main
 
 import (
+	"go-learn/day14/rpc_pkg"
 	"log"
 	"net"
 	"net/rpc"
-
-	"./rpc_pkg"
 )
 
-type HelloService struct{}
+type HelloService2 struct{}
 
-func (p *HelloService) Hello(request string, reply *string) error {
+func (p *HelloService2) Hello(request string, reply *string) error {
 	*reply = "hello:" + request
 	return nil
 }
 
 func main() {
-	rpc_pkg.RegisterHelloService(new(HelloService))
+	rpc_pkg.RegisterHelloService(new(HelloService2))
 
 	listener, err := net.Listen("tcp", ":1234")
 	if err != nil {
